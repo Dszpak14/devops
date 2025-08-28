@@ -5,18 +5,16 @@ describe('Regular fibonacci value', function() {
         assert.strictEqual(main.fibonacci(5), 5);
       });
 });
-
 describe('First two terms', function() {
   it('should return 0 and 1 for first two terms', function() {
       assert.strictEqual(main.fibonacci(0), 0);
       assert.strictEqual(main.fibonacci(1), 1);
     });
+}); 
 });
-
-var negative = require('../index');
-var assert = require('assert');
-describe('Negative numbers cant have a factorial', function() {
-    it('It should return undefined if the input is negative.', function() {
-        assert.strictEqual(main.fibonacci(-5), undefined);
-      });
+describe('Negative number', function() {
+  it('should return undefined if negative', function() {
+      assert.strictEqual(main.fibonacci(-1), undefined);
+      assert.strictEqual(main.fibonacci(-10), undefined);
+    });
 });
