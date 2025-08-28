@@ -12,3 +12,11 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(1), 1);
     });
 });
+
+var negative = require('../index');
+var assert = require('assert');
+describe('Negative numbers cant have a factorial', function() {
+    it('It should return undefined if the input is negative.', function() {
+        assert.strictEqual(main.fibonacci(-5), undefined);
+      });
+});
