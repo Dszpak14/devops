@@ -3,3 +3,8 @@ exports.fibonacci = function(n) {
         return n;
     return this.fibonacci(n-1) + this.fibonacci(n-2);
 }
+
+xports.fibonacci = function(n) {
+    if(n < 0){
+        return undefined
+    }
